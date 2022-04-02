@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+body {
+    background-image: url("assets/imgFondo.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font-family: sans-serif;
+    padding: 20px;
+}
+header {
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: baseline;
+}
+header .logo{
+    width: 100px;
+    height: 100px;
+}
+header h1{
+    margin-left: 100px;
+    margin-top: 25px;
+}
+.menu{
+    text-align: center;
+    background-color: #ffffff73;
+    width: 100%;
+    border-radius: 10px;
+}
+nav a {
+    color: #ad5502;
+    padding: 2px 15px;
+    
+    font-size: 30px;
+    text-decoration: none;
+
+}
+nav a:hover {
+    box-shadow: 2px 5px 5px rgb(92, 92, 92);
+    /* color: white; */
+    transition: 0.5s;
+    position: relative; bottom: 2px;
+}
+
+main{
+    display: flex;
+}
+.contenido {
+    background-color: #ffffffe1;
+    width: 75%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+
+.contenido h2 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.contenido p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Fin de artículo (contenido/servicio) */
+
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.623);
+    width: 100%;
+    color: #ffffff;
+    padding: 20px 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+a{text-decoration: none; color: #ffffff;}
+footer img{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius: 50%;
+}
+footer img:hover{
+    
+    background-color: white;
+    transition: 0.5s;
+}
+
+
+
+/* Para pantallas de Celular */
+@media screen and (max-width:550px){
+    body{background-attachment: fixed;}
+    header {
+        margin: auto;
+        /* flex-direction: row; */
+        display: block;
+    }
+    header img, header h1{
+        display: block;
+        width: 100%; margin: auto;text-align: center;
+    }
+    .menu{
+        
+        max-width: 550px;
+    }
+    nav {
+        background-color: rgba(255,255,255, 0.5);
+        width: 100%;
+        flex-direction: row;
+        
+    }
+
+    nav a {
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid #f2f2f2;
+        display: block;
+    }
+
+    nav a:hover {
+        background-color: rgba(0,0,0,0.5);
+        text-decoration: none;
+        box-shadow: none; color: white;
+    }
+    main{
+        /* display: block; */
+        flex-direction: column-reverse;
+    }
+    .contenido{
+        width: 100%;
+        display: block;
+    }
+    aside {
+        width: 90%;
+        display: block;        
+    }
+    iframe{width: 100%;}
+
+    footer {
+        flex-direction: column-reverse;
+    }
+    .mapa{
+        width: 100%;
+    }
+} 
+
